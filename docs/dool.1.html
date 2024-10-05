@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-<meta name="generator" content="AsciiDoc 9.1.0" />
+<meta name="generator" content="AsciiDoc 10.2.1" />
 <title>dool(1)</title>
 <style type="text/css">
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -1305,824 +1305,824 @@ Here is an overview of the plugins dool ships with:</p></div>
 </p>
 </dd>
 <dt class="hdlist1">
---disk-wait
-</dt>
-<dd>
-<p>
-    average time (in milliseconds) for I/O requests issued to the device to be served
-</p>
-</dd>
-<dt class="hdlist1">
---dool
-</dt>
-<dd>
-<p>
-    show dool cputime consumption and latency
-</p>
-</dd>
-<dt class="hdlist1">
---dool-cpu
-</dt>
-<dd>
-<p>
-    show dool advanced cpu usage
-</p>
-</dd>
-<dt class="hdlist1">
---dool-ctxt
-</dt>
-<dd>
-<p>
-    show dool context switches
-</p>
-</dd>
-<dt class="hdlist1">
---dool-mem
-</dt>
-<dd>
-<p>
-    show dool advanced memory usage
-</p>
-</dd>
-<dt class="hdlist1">
---fan
-</dt>
-<dd>
-<p>
-    fan speed (needs ACPI)
-</p>
-</dd>
-<dt class="hdlist1">
---freespace
-</dt>
-<dd>
-<p>
-    per filesystem disk usage
-</p>
-</dd>
-<dt class="hdlist1">
---gpfs
-</dt>
-<dd>
-<p>
-    GPFS read/write I/O (needs mmpmon)
-</p>
-</dd>
-<dt class="hdlist1">
---gpfs-ops
-</dt>
-<dd>
-<p>
-    GPFS filesystem operations (needs mmpmon)
-</p>
-</dd>
-<dt class="hdlist1">
---helloworld
-</dt>
-<dd>
-<p>
-    Hello world example dool plugin
-</p>
-</dd>
-<dt class="hdlist1">
---innodb-buffer
-</dt>
-<dd>
-<p>
-    show innodb buffer stats
-</p>
-</dd>
-<dt class="hdlist1">
---innodb-io
-</dt>
-<dd>
-<p>
-    show innodb I/O stats
-</p>
-</dd>
-<dt class="hdlist1">
---innodb-ops
-</dt>
-<dd>
-<p>
-    show innodb operations counters
-</p>
-</dd>
-<dt class="hdlist1">
---lustre
-</dt>
-<dd>
-<p>
-    show lustre I/O throughput
-</p>
-</dd>
-<dt class="hdlist1">
---md-status
-</dt>
-<dd>
-<p>
-    show software raid (md) progress and speed
-</p>
-</dd>
-<dt class="hdlist1">
---memcache-hits
-</dt>
-<dd>
-<p>
-    show the number of hits and misses from memcache
-</p>
-</dd>
-<dt class="hdlist1">
---mysql5-cmds
-</dt>
-<dd>
-<p>
-    show the MySQL5 command stats
-</p>
-</dd>
-<dt class="hdlist1">
---mysql5-conn
-</dt>
-<dd>
-<p>
-    show the MySQL5 connection stats
-</p>
-</dd>
-<dt class="hdlist1">
---mysql5-innodb
-</dt>
-<dd>
-<p>
-    show the MySQL5 innodb stats
-</p>
-</dd>
-<dt class="hdlist1">
---mysql5-io
-</dt>
-<dd>
-<p>
-    show the MySQL5 I/O stats
-</p>
-</dd>
-<dt class="hdlist1">
---mysql5-keys
-</dt>
-<dd>
-<p>
-    show the MySQL5 keys stats
-</p>
-</dd>
-<dt class="hdlist1">
---mysql-io
-</dt>
-<dd>
-<p>
-    show the MySQL I/O stats
-</p>
-</dd>
-<dt class="hdlist1">
---mysql-keys
-</dt>
-<dd>
-<p>
-    show the MySQL keys stats
-</p>
-</dd>
-<dt class="hdlist1">
---net-packets
-</dt>
-<dd>
-<p>
-    show the number of packets received and transmitted
-</p>
-</dd>
-<dt class="hdlist1">
---nfs3
-</dt>
-<dd>
-<p>
-    show NFS v3 client operations
-</p>
-</dd>
-<dt class="hdlist1">
---nfs3-ops
-</dt>
-<dd>
-<p>
-    show extended NFS v3 client operations
-</p>
-</dd>
-<dt class="hdlist1">
---nfsd3
-</dt>
-<dd>
-<p>
-    show NFS v3 server operations
-</p>
-</dd>
-<dt class="hdlist1">
---nfsd3-ops
-</dt>
-<dd>
-<p>
-    show extended NFS v3 server operations
-</p>
-</dd>
-<dt class="hdlist1">
---nfsd4-ops
-</dt>
-<dd>
-<p>
-    show extended NFS v4 server operations
-</p>
-</dd>
-<dt class="hdlist1">
---nfsstat4
-</dt>
-<dd>
-<p>
-    show NFS v4 stats
-</p>
-</dd>
-<dt class="hdlist1">
---ntp
-</dt>
-<dd>
-<p>
-    show NTP time from an NTP server
-</p>
-</dd>
-<dt class="hdlist1">
---postfix
-</dt>
-<dd>
-<p>
-    show postfix queue sizes (needs postfix)
-</p>
-</dd>
-<dt class="hdlist1">
---power
-</dt>
-<dd>
-<p>
-    show power usage
-</p>
-</dd>
-<dt class="hdlist1">
---proc-count
-</dt>
-<dd>
-<p>
-    show total number of processes
-</p>
-</dd>
-<dt class="hdlist1">
---qmail
-</dt>
-<dd>
-<p>
-    show qmail queue sizes (needs qmail)
-</p>
-</dd>
-</dl></div>
-<div class="paragraph"><p>--redis:
-    show redis stats</p></div>
-<div class="dlist"><dl>
-<dt class="hdlist1">
---rpc
-</dt>
-<dd>
-<p>
-    show RPC client calls stats
-</p>
-</dd>
-<dt class="hdlist1">
---rpcd
-</dt>
-<dd>
-<p>
-    show RPC server calls stats
-</p>
-</dd>
-<dt class="hdlist1">
---sendmail
-</dt>
-<dd>
-<p>
-    show sendmail queue size (needs sendmail)
-</p>
-</dd>
-<dt class="hdlist1">
---snmp-cpu
-</dt>
-<dd>
-<p>
-    show CPU stats using SNMP from DOOL_SNMPSERVER
-</p>
-</dd>
-<dt class="hdlist1">
---snmp-load
-</dt>
-<dd>
-<p>
-    show load stats using SNMP from DOOL_SNMPSERVER
-</p>
-</dd>
-<dt class="hdlist1">
---snmp-mem
-</dt>
-<dd>
-<p>
-    show memory stats using SNMP from DOOL_SNMPSERVER
-</p>
-</dd>
-<dt class="hdlist1">
---snmp-net
-</dt>
-<dd>
-<p>
-    show network stats using SNMP from DOOL_SNMPSERVER
-</p>
-</dd>
-</dl></div>
-<div class="paragraph"><p>--snmp-net-err:
-    show network errors using SNMP from DOOL_SNMPSERVER</p></div>
-<div class="dlist"><dl>
-<dt class="hdlist1">
---snmp-sys
-</dt>
-<dd>
-<p>
-    show system stats (interrupts and context switches) using SNMP from DOOL_SNMPSERVER
-</p>
-</dd>
-<dt class="hdlist1">
---snooze
-</dt>
-<dd>
-<p>
-    show number of ticks per second
-</p>
-</dd>
-<dt class="hdlist1">
---squid
-</dt>
-<dd>
-<p>
-    show squid usage statistics
-</p>
-</dd>
-<dt class="hdlist1">
---test
-</dt>
-<dd>
-<p>
-    show test plugin output
-</p>
-</dd>
-<dt class="hdlist1">
---thermal
-</dt>
-<dd>
-<p>
-    system temperature sensors
-</p>
-</dd>
-<dt class="hdlist1">
---top-bio
-</dt>
-<dd>
-<p>
-    show most expensive block I/O process
-</p>
-</dd>
-<dt class="hdlist1">
---top-bio-adv
-</dt>
-<dd>
-<p>
-    show most expensive block I/O process (incl. pid and other stats)
-</p>
-</dd>
-<dt class="hdlist1">
---top-childwait
-</dt>
-<dd>
-<p>
-    show process waiting for child the most
-</p>
-</dd>
-<dt class="hdlist1">
---top-cpu
-</dt>
-<dd>
-<p>
-    show most expensive CPU process
-</p>
-</dd>
-<dt class="hdlist1">
---top-cpu-adv
-</dt>
-<dd>
-<p>
-    show most expensive CPU process (incl. pid and other stats)
-</p>
-</dd>
-<dt class="hdlist1">
---top-cputime
-</dt>
-<dd>
-<p>
-    show process using the most CPU time (in ms)
-</p>
-</dd>
-<dt class="hdlist1">
---top-cputime-avg
-</dt>
-<dd>
-<p>
-    show process with the highest average timeslice (in ms)
-</p>
-</dd>
-<dt class="hdlist1">
---top-int
-</dt>
-<dd>
-<p>
-    show most frequent interrupt
-</p>
-</dd>
-<dt class="hdlist1">
---top-io
-</dt>
-<dd>
-<p>
-    show most expensive I/O process
-</p>
-</dd>
-<dt class="hdlist1">
---top-io-adv
-</dt>
-<dd>
-<p>
-    show most expensive I/O process (incl. pid and other stats)
-</p>
-</dd>
-<dt class="hdlist1">
---top-latency
-</dt>
-<dd>
-<p>
-    show process with highest total latency (in ms)
-</p>
-</dd>
-<dt class="hdlist1">
---top-latency-avg
-</dt>
-<dd>
-<p>
-    show process with the highest average latency (in ms)
-</p>
-</dd>
-<dt class="hdlist1">
---top-mem
-</dt>
-<dd>
-<p>
-    show process using the most memory
-</p>
-</dd>
-<dt class="hdlist1">
---top-oom
-</dt>
-<dd>
-<p>
-    show process that will be killed by OOM the first
-</p>
-</dd>
-<dt class="hdlist1">
---utmp
-</dt>
-<dd>
-<p>
-    show number of utmp connections (needs python-utmp)
-</p>
-</dd>
-<dt class="hdlist1">
---vm-cpu
-</dt>
-<dd>
-<p>
-    show VMware CPU stats from hypervisor
-</p>
-</dd>
-<dt class="hdlist1">
---vm-mem
-</dt>
-<dd>
-<p>
-    show VMware memory stats from hypervisor
-</p>
-</dd>
-<dt class="hdlist1">
---vm-mem-adv
-</dt>
-<dd>
-<p>
-    show advanced VMware memory stats from hypervisor
-</p>
-</dd>
-<dt class="hdlist1">
---vmk-hba
-</dt>
-<dd>
-<p>
-    show VMware ESX kernel vmhba stats
-</p>
-</dd>
-<dt class="hdlist1">
---vmk-int
-</dt>
-<dd>
-<p>
-    show VMware ESX kernel interrupt stats
-</p>
-</dd>
-<dt class="hdlist1">
---vmk-nic
-</dt>
-<dd>
-<p>
-    show VMware ESX kernel port stats
-</p>
-</dd>
-<dt class="hdlist1">
---vz-cpu
-</dt>
-<dd>
-<p>
-    show CPU usage per OpenVZ guest
-</p>
-</dd>
-<dt class="hdlist1">
---vz-io
-</dt>
-<dd>
-<p>
-    show I/O usage per OpenVZ guest
-</p>
-</dd>
-<dt class="hdlist1">
---vz-ubc
-</dt>
-<dd>
-<p>
-    show OpenVZ user beancounters
-</p>
-</dd>
-<dt class="hdlist1">
---wifi
-</dt>
-<dd>
-<p>
-    wireless link quality and signal to noise ratio
-</p>
-</dd>
-<dt class="hdlist1">
---zfs-arc
-</dt>
-<dd>
-<p>
-    show ZFS arc stats
-</p>
-</dd>
-<dt class="hdlist1">
---zfs-l2arc
-</dt>
-<dd>
-<p>
-    show ZFS l2arc stats
-</p>
-</dd>
-<dt class="hdlist1">
---zfs-zil
-</dt>
-<dd>
-<p>
-    show ZFS zil stats
-</p>
-</dd>
-</dl></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_arguments">ARGUMENTS</h2>
-<div class="sectionbody">
-<div class="paragraph"><p><strong>delay</strong> is the delay in seconds between each update</p></div>
-<div class="paragraph"><p><strong>count</strong> is the number of updates to display before exiting</p></div>
-<div class="paragraph"><p>The default delay is 1 and count is unspecified (unlimited)</p></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_intermediate_updates">INTERMEDIATE UPDATES</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>When invoking dool with a <strong>delay</strong> greater than 1 and without the
-<strong>--noupdate</strong> option, it will show intermediate updates, ie. the first
-time a 1 sec average, the second update a 2 second average, etc. until
-the delay has been reached.</p></div>
-<div class="paragraph"><p>So in case you specified a delay of 10, <strong>the 9 intermediate updates
-are NOT snapshots</strong>, they are averages over the time that passed since
-the last final update. The end result is that you get a 10 second
-average on a new line, just like with vmstat.</p></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_examples">EXAMPLES</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Using dool to relate disk-throughput with network-usage (eth0), total CPU-usage and system counters:</p></div>
-<div class="listingblock">
-<div class="content">
-<pre><code>dool -dnyc -N eth0 -C total -f 5</code></pre>
-</div></div>
-<div class="paragraph"><p>Checking dool&#8217;s behaviour and the system impact of dool:</p></div>
-<div class="listingblock">
-<div class="content">
-<pre><code>dool -taf --debug</code></pre>
-</div></div>
-<div class="paragraph"><p>Using the time plugin together with cpu, net, disk, system, load, proc and
-top_cpu plugins:</p></div>
-<div class="listingblock">
-<div class="content">
-<pre><code>dool -tcndylp --top-cpu</code></pre>
-</div></div>
-<div class="paragraph"><p>this is identical to</p></div>
-<div class="listingblock">
-<div class="content">
-<pre><code>dool --time --cpu --net --disk --sys --load --proc --top-cpu</code></pre>
-</div></div>
-<div class="paragraph"><p>Using dool to relate advanced cpu stats with interrupts per device:</p></div>
-<div class="listingblock">
-<div class="content">
-<pre><code>dool -t --cpu-adv -yif</code></pre>
-</div></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_bugs">BUGS</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Since it is practically impossible to test dool on every possible
-permutation of kernel, python or distribution version, I need your
-help and your feedback to fix the remaining problems. If you have
-improvements or bugreports, please send them to:
-<a href="mailto:dag@wieers.com">dag@wieers.com</a></p></div>
-<div class="admonitionblock">
-<table><tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">Please see the TODO file for known bugs and future plans.</td>
-</tr></table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_files">FILES</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Paths that may contain external dool_*.py plugins:</p></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>~/.dool/
-(path of binary)/plugins/
-/usr/share/dool/
-/usr/local/share/dool/</code></pre>
-</div></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_environment_variables">ENVIRONMENT VARIABLES</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Dool will read additional command line arguments from the environment
-variable <strong>DOOL_OPTS</strong>. You can use this to configure Dool&#8217;s default
-behavior, e.g. if you have a black-on-white terminal:</p></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>export DOOL_OPTS="--bw --noupdate"</code></pre>
-</div></div>
-<div class="paragraph"><p>Other internal or external plugins have their own environment variables
-to influence their behavior, e.g.</p></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>DOOL_NTPSERVER</code></pre>
-</div></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>DOOL_MYSQL
-DOOL_MYSQL_HOST
-DOOL_MYSQL_PORT
-DOOL_MYSQL_SOCKET
-DOOL_MYSQL_USER
-DOOL_MYSQL_PWD</code></pre>
-</div></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>DOOL_SNMPSERVER
-DOOL_SNMPCOMMUNITY</code></pre>
-</div></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>DOOL_SQUID_OPTS</code></pre>
-</div></div>
-<div class="literalblock">
-<div class="content">
-<pre><code>DOOL_TIMEFMT</code></pre>
-</div></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_see_also">SEE ALSO</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_performance_tools">Performance tools</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>htop(1), ifstat(1), iftop(8), iostat(1), mpstat(1), netstat(8), nfsstat(8), perf(1), powertop(1), rtacct(8), top(1), vmstat(8), xosview(1)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_process_tracing">Process tracing</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>lslk(8), lsof(8), ltrace(1), pidstat(1), pmap(1), ps(1), pstack(1), strace(1)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_binary_debugging">Binary debugging</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>ldd(1), file(1), nm(1), objdump(1), readelf(1)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_memory_usage_tools">Memory usage tools</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>free(1), memusage, memusagestat, ps_mem(1), slabtop(1), smem(8)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_accounting_tools">Accounting tools</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>acct(2), dump-acct(8), dump-utmp(8), lastcomm(1), sa(8)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_hardware_debugging_tools">Hardware debugging tools</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>dmidecode(8), ifinfo(1), lsdev(1), lshal(1), lshw(1), lsmod(8), lspci(8), lsusb(8), numactl(8), smartctl(8), turbostat(8), x86info(1)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_application_debugging">Application debugging</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>mailstats(8), qshape(1)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_xorg_related_tools">Xorg related tools</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>xdpyinfo(1), xrestop(1)</code></pre>
-</div></div>
-</div>
-<div class="sect2">
-<h3 id="_other_useful_info">Other useful info</h3>
-<div class="literalblock">
-<div class="content">
-<pre><code>collectl(1), proc(5), procinfo(8)</code></pre>
-</div></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_author">AUTHOR</h2>
-<div class="sectionbody">
-<div class="paragraph"><p>Dool is maintained by Scott Baker <a href="mailto:scott@perturb.org">scott@perturb.org</a></p></div>
-<div class="paragraph"><p>Homepage at <a href="https://github.com/scottchiefbaker/dool">https://github.com/scottchiefbaker/dool</a></p></div>
-<div class="paragraph"><p>dstat originally written by Dag Wieers <a href="mailto:dag@wieers.com">dag@wieers.com</a></p></div>
-<div class="paragraph"><p>Homepage at <a href="http://dag.wieers.com/home-made/dstat/">http://dag.wieers.com/home-made/dstat/</a></p></div>
-<div class="paragraph"><p>This manpage was initially written by Andrew Pollock
-<a href="mailto:apollock@debian.org">apollock@debian.org</a> for the Debian GNU/Linux system.</p></div>
-</div>
-</div>
-</div>
-<div id="footnotes"><hr /></div>
-<div id="footer">
-<div id="footer-text">
-Version 1.3.0<br />
-Last updated
+    --disk-wait
+    </dt>
+    <dd>
+    <p>
+        average time (in milliseconds) for I/O requests issued to the device to be served
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --dool
+    </dt>
+    <dd>
+    <p>
+        show dool cputime consumption and latency
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --dool-cpu
+    </dt>
+    <dd>
+    <p>
+        show dool advanced cpu usage
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --dool-ctxt
+    </dt>
+    <dd>
+    <p>
+        show dool context switches
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --dool-mem
+    </dt>
+    <dd>
+    <p>
+        show dool advanced memory usage
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --fan
+    </dt>
+    <dd>
+    <p>
+        fan speed (needs ACPI)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --freespace
+    </dt>
+    <dd>
+    <p>
+        per filesystem disk usage
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --gpfs
+    </dt>
+    <dd>
+    <p>
+        GPFS read/write I/O (needs mmpmon)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --gpfs-ops
+    </dt>
+    <dd>
+    <p>
+        GPFS filesystem operations (needs mmpmon)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --helloworld
+    </dt>
+    <dd>
+    <p>
+        Hello world example dool plugin
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --innodb-buffer
+    </dt>
+    <dd>
+    <p>
+        show innodb buffer stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --innodb-io
+    </dt>
+    <dd>
+    <p>
+        show innodb I/O stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --innodb-ops
+    </dt>
+    <dd>
+    <p>
+        show innodb operations counters
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --lustre
+    </dt>
+    <dd>
+    <p>
+        show lustre I/O throughput
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --md-status
+    </dt>
+    <dd>
+    <p>
+        show software raid (md) progress and speed
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --memcache-hits
+    </dt>
+    <dd>
+    <p>
+        show the number of hits and misses from memcache
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql5-cmds
+    </dt>
+    <dd>
+    <p>
+        show the MySQL5 command stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql5-conn
+    </dt>
+    <dd>
+    <p>
+        show the MySQL5 connection stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql5-innodb
+    </dt>
+    <dd>
+    <p>
+        show the MySQL5 innodb stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql5-io
+    </dt>
+    <dd>
+    <p>
+        show the MySQL5 I/O stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql5-keys
+    </dt>
+    <dd>
+    <p>
+        show the MySQL5 keys stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql-io
+    </dt>
+    <dd>
+    <p>
+        show the MySQL I/O stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --mysql-keys
+    </dt>
+    <dd>
+    <p>
+        show the MySQL keys stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --net-packets
+    </dt>
+    <dd>
+    <p>
+        show the number of packets received and transmitted
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --nfs3
+    </dt>
+    <dd>
+    <p>
+        show NFS v3 client operations
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --nfs3-ops
+    </dt>
+    <dd>
+    <p>
+        show extended NFS v3 client operations
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --nfsd3
+    </dt>
+    <dd>
+    <p>
+        show NFS v3 server operations
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --nfsd3-ops
+    </dt>
+    <dd>
+    <p>
+        show extended NFS v3 server operations
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --nfsd4-ops
+    </dt>
+    <dd>
+    <p>
+        show extended NFS v4 server operations
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --nfsstat4
+    </dt>
+    <dd>
+    <p>
+        show NFS v4 stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --ntp
+    </dt>
+    <dd>
+    <p>
+        show NTP time from an NTP server
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --postfix
+    </dt>
+    <dd>
+    <p>
+        show postfix queue sizes (needs postfix)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --power
+    </dt>
+    <dd>
+    <p>
+        show power usage
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --proc-count
+    </dt>
+    <dd>
+    <p>
+        show total number of processes
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --qmail
+    </dt>
+    <dd>
+    <p>
+        show qmail queue sizes (needs qmail)
+    </p>
+    </dd>
+    </dl></div>
+    <div class="paragraph"><p>--redis:
+        show redis stats</p></div>
+    <div class="dlist"><dl>
+    <dt class="hdlist1">
+    --rpc
+    </dt>
+    <dd>
+    <p>
+        show RPC client calls stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --rpcd
+    </dt>
+    <dd>
+    <p>
+        show RPC server calls stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --sendmail
+    </dt>
+    <dd>
+    <p>
+        show sendmail queue size (needs sendmail)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --snmp-cpu
+    </dt>
+    <dd>
+    <p>
+        show CPU stats using SNMP from DOOL_SNMPSERVER
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --snmp-load
+    </dt>
+    <dd>
+    <p>
+        show load stats using SNMP from DOOL_SNMPSERVER
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --snmp-mem
+    </dt>
+    <dd>
+    <p>
+        show memory stats using SNMP from DOOL_SNMPSERVER
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --snmp-net
+    </dt>
+    <dd>
+    <p>
+        show network stats using SNMP from DOOL_SNMPSERVER
+    </p>
+    </dd>
+    </dl></div>
+    <div class="paragraph"><p>--snmp-net-err:
+        show network errors using SNMP from DOOL_SNMPSERVER</p></div>
+    <div class="dlist"><dl>
+    <dt class="hdlist1">
+    --snmp-sys
+    </dt>
+    <dd>
+    <p>
+        show system stats (interrupts and context switches) using SNMP from DOOL_SNMPSERVER
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --snooze
+    </dt>
+    <dd>
+    <p>
+        show number of ticks per second
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --squid
+    </dt>
+    <dd>
+    <p>
+        show squid usage statistics
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --test
+    </dt>
+    <dd>
+    <p>
+        show test plugin output
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --thermal
+    </dt>
+    <dd>
+    <p>
+        system temperature sensors
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-bio
+    </dt>
+    <dd>
+    <p>
+        show most expensive block I/O process
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-bio-adv
+    </dt>
+    <dd>
+    <p>
+        show most expensive block I/O process (incl. pid and other stats)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-childwait
+    </dt>
+    <dd>
+    <p>
+        show process waiting for child the most
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-cpu
+    </dt>
+    <dd>
+    <p>
+        show most expensive CPU process
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-cpu-adv
+    </dt>
+    <dd>
+    <p>
+        show most expensive CPU process (incl. pid and other stats)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-cputime
+    </dt>
+    <dd>
+    <p>
+        show process using the most CPU time (in ms)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-cputime-avg
+    </dt>
+    <dd>
+    <p>
+        show process with the highest average timeslice (in ms)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-int
+    </dt>
+    <dd>
+    <p>
+        show most frequent interrupt
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-io
+    </dt>
+    <dd>
+    <p>
+        show most expensive I/O process
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-io-adv
+    </dt>
+    <dd>
+    <p>
+        show most expensive I/O process (incl. pid and other stats)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-latency
+    </dt>
+    <dd>
+    <p>
+        show process with highest total latency (in ms)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-latency-avg
+    </dt>
+    <dd>
+    <p>
+        show process with the highest average latency (in ms)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-mem
+    </dt>
+    <dd>
+    <p>
+        show process using the most memory
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --top-oom
+    </dt>
+    <dd>
+    <p>
+        show process that will be killed by OOM the first
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --utmp
+    </dt>
+    <dd>
+    <p>
+        show number of utmp connections (needs python-utmp)
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vm-cpu
+    </dt>
+    <dd>
+    <p>
+        show VMware CPU stats from hypervisor
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vm-mem
+    </dt>
+    <dd>
+    <p>
+        show VMware memory stats from hypervisor
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vm-mem-adv
+    </dt>
+    <dd>
+    <p>
+        show advanced VMware memory stats from hypervisor
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vmk-hba
+    </dt>
+    <dd>
+    <p>
+        show VMware ESX kernel vmhba stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vmk-int
+    </dt>
+    <dd>
+    <p>
+        show VMware ESX kernel interrupt stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vmk-nic
+    </dt>
+    <dd>
+    <p>
+        show VMware ESX kernel port stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vz-cpu
+    </dt>
+    <dd>
+    <p>
+        show CPU usage per OpenVZ guest
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vz-io
+    </dt>
+    <dd>
+    <p>
+        show I/O usage per OpenVZ guest
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --vz-ubc
+    </dt>
+    <dd>
+    <p>
+        show OpenVZ user beancounters
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --wifi
+    </dt>
+    <dd>
+    <p>
+        wireless link quality and signal to noise ratio
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --zfs-arc
+    </dt>
+    <dd>
+    <p>
+        show ZFS arc stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --zfs-l2arc
+    </dt>
+    <dd>
+    <p>
+        show ZFS l2arc stats
+    </p>
+    </dd>
+    <dt class="hdlist1">
+    --zfs-zil
+    </dt>
+    <dd>
+    <p>
+        show ZFS zil stats
+    </p>
+    </dd>
+    </dl></div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_arguments">ARGUMENTS</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p><strong>delay</strong> is the delay in seconds between each update</p></div>
+    <div class="paragraph"><p><strong>count</strong> is the number of updates to display before exiting</p></div>
+    <div class="paragraph"><p>The default delay is 1 and count is unspecified (unlimited)</p></div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_intermediate_updates">INTERMEDIATE UPDATES</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p>When invoking dool with a <strong>delay</strong> greater than 1 and without the
+    <strong>--noupdate</strong> option, it will show intermediate updates, ie. the first
+    time a 1 sec average, the second update a 2 second average, etc. until
+    the delay has been reached.</p></div>
+    <div class="paragraph"><p>So in case you specified a delay of 10, <strong>the 9 intermediate updates
+    are NOT snapshots</strong>, they are averages over the time that passed since
+    the last final update. The end result is that you get a 10 second
+    average on a new line, just like with vmstat.</p></div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_examples">EXAMPLES</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p>Using dool to relate disk-throughput with network-usage (eth0), total CPU-usage and system counters:</p></div>
+    <div class="listingblock">
+    <div class="content">
+    <pre><code>dool -dnyc -N eth0 -C total -f 5</code></pre>
+    </div></div>
+    <div class="paragraph"><p>Checking dool&#8217;s behaviour and the system impact of dool:</p></div>
+    <div class="listingblock">
+    <div class="content">
+    <pre><code>dool -taf --debug</code></pre>
+    </div></div>
+    <div class="paragraph"><p>Using the time plugin together with cpu, net, disk, system, load, proc and
+    top_cpu plugins:</p></div>
+    <div class="listingblock">
+    <div class="content">
+    <pre><code>dool -tcndylp --top-cpu</code></pre>
+    </div></div>
+    <div class="paragraph"><p>this is identical to</p></div>
+    <div class="listingblock">
+    <div class="content">
+    <pre><code>dool --time --cpu --net --disk --sys --load --proc --top-cpu</code></pre>
+    </div></div>
+    <div class="paragraph"><p>Using dool to relate advanced cpu stats with interrupts per device:</p></div>
+    <div class="listingblock">
+    <div class="content">
+    <pre><code>dool -t --cpu-adv -yif</code></pre>
+    </div></div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_bugs">BUGS</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p>Since it is practically impossible to test dool on every possible
+    permutation of kernel, python or distribution version, I need your
+    help and your feedback to fix the remaining problems. If you have
+    improvements or bugreports, please send them to:
+    <a href="mailto:dag@wieers.com">dag@wieers.com</a></p></div>
+    <div class="admonitionblock">
+    <table><tr>
+    <td class="icon">
+    <div class="title">Note</div>
+    </td>
+    <td class="content">Please see the TODO file for known bugs and future plans.</td>
+    </tr></table>
+    </div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_files">FILES</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p>Paths that may contain external dool_*.py plugins:</p></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>~/.dool/
+    (path of binary)/plugins/
+    /usr/share/dool/
+    /usr/local/share/dool/</code></pre>
+    </div></div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_environment_variables">ENVIRONMENT VARIABLES</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p>Dool will read additional command line arguments from the environment
+    variable <strong>DOOL_OPTS</strong>. You can use this to configure Dool&#8217;s default
+    behavior, e.g. if you have a black-on-white terminal:</p></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>export DOOL_OPTS="--bw --noupdate"</code></pre>
+    </div></div>
+    <div class="paragraph"><p>Other internal or external plugins have their own environment variables
+    to influence their behavior, e.g.</p></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>DOOL_NTPSERVER</code></pre>
+    </div></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>DOOL_MYSQL
+    DOOL_MYSQL_HOST
+    DOOL_MYSQL_PORT
+    DOOL_MYSQL_SOCKET
+    DOOL_MYSQL_USER
+    DOOL_MYSQL_PWD</code></pre>
+    </div></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>DOOL_SNMPSERVER
+    DOOL_SNMPCOMMUNITY</code></pre>
+    </div></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>DOOL_SQUID_OPTS</code></pre>
+    </div></div>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>DOOL_TIMEFMT</code></pre>
+    </div></div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_see_also">SEE ALSO</h2>
+    <div class="sectionbody">
+    <div class="sect2">
+    <h3 id="_performance_tools">Performance tools</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>htop(1), ifstat(1), iftop(8), iostat(1), mpstat(1), netstat(8), nfsstat(8), perf(1), powertop(1), rtacct(8), top(1), vmstat(8), xosview(1)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_process_tracing">Process tracing</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>lslk(8), lsof(8), ltrace(1), pidstat(1), pmap(1), ps(1), pstack(1), strace(1)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_binary_debugging">Binary debugging</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>ldd(1), file(1), nm(1), objdump(1), readelf(1)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_memory_usage_tools">Memory usage tools</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>free(1), memusage, memusagestat, ps_mem(1), slabtop(1), smem(8)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_accounting_tools">Accounting tools</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>acct(2), dump-acct(8), dump-utmp(8), lastcomm(1), sa(8)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_hardware_debugging_tools">Hardware debugging tools</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>dmidecode(8), ifinfo(1), lsdev(1), lshal(1), lshw(1), lsmod(8), lspci(8), lsusb(8), numactl(8), smartctl(8), turbostat(8), x86info(1)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_application_debugging">Application debugging</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>mailstats(8), qshape(1)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_xorg_related_tools">Xorg related tools</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>xdpyinfo(1), xrestop(1)</code></pre>
+    </div></div>
+    </div>
+    <div class="sect2">
+    <h3 id="_other_useful_info">Other useful info</h3>
+    <div class="literalblock">
+    <div class="content">
+    <pre><code>collectl(1), proc(5), procinfo(8)</code></pre>
+    </div></div>
+    </div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_author">AUTHOR</h2>
+    <div class="sectionbody">
+    <div class="paragraph"><p>Dool is maintained by Scott Baker <a href="mailto:scott@perturb.org">scott@perturb.org</a></p></div>
+    <div class="paragraph"><p>Homepage at <a href="https://github.com/scottchiefbaker/dool">https://github.com/scottchiefbaker/dool</a></p></div>
+    <div class="paragraph"><p>dstat originally written by Dag Wieers <a href="mailto:dag@wieers.com">dag@wieers.com</a></p></div>
+    <div class="paragraph"><p>Homepage at <a href="http://dag.wieers.com/home-made/dstat/">http://dag.wieers.com/home-made/dstat/</a></p></div>
+    <div class="paragraph"><p>This manpage was initially written by Andrew Pollock
+    <a href="mailto:apollock@debian.org">apollock@debian.org</a> for the Debian GNU/Linux system.</p></div>
+    </div>
+    </div>
+    </div>
+    <div id="footnotes"><hr /></div>
+    <div id="footer">
+    <div id="footer-text">
+    Version 1.3.0<br />
+    Last updated
  2024-10-07 14:12:47 PDT
 </div>
 </div>

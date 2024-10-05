@@ -61,7 +61,7 @@ snap:
 	cd packaging/snap/; snapcraft
 
 deb:
-	cd packaging/debian/; ./build.sh ; cd - > /dev/null
+	dpkg-buildpackage -us -uc
 
 display_config:
 	@echo Displaying config
